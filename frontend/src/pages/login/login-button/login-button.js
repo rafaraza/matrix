@@ -20,10 +20,10 @@ export class LoginButton extends Component {
       email: profile.getEmail()
     };
     const domain = profileData.email.split('@')[1];
-    console.log(domain);
     if (domain == 'luizalabs.com' || domain == 'magazineluiza.com.br') {
       this.props.onSignIn(profileData);
     } else {
+      console.log(`Domínio inválido: ${domain}`);
       return;
     }
   }
