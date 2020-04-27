@@ -38,8 +38,14 @@ window.onload = () => {
             imageUrl: basicProfile.getImageUrl(),
             email: basicProfile.getEmail()
           };
+          const domain = profileData.email.split('@')[1];
+          if (domain == 'luizalabs.com.br' || domain == 'magazineluiza.com.br') {
+            matrixProfile.storeProfileData(profileData);
+          } else {
+            window.location.href = "/";
+            return;
+          }
 
-          matrixProfile.storeProfileData(profileData);
         }
 
         renderApp();
