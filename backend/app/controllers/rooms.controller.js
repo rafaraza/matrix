@@ -35,6 +35,7 @@ const createRoomFileSync = () => {
     "Novalis",
     "Vigilant",
     "Zion",
+    "Labs Café"
   ];
 
   for (const niceName of niceNames) {
