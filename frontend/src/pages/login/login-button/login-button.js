@@ -21,7 +21,7 @@ export class LoginButton extends Component {
     };
     const domain = profileData.email.split('@')[1];
     console.log(domain);
-    if (domain == 'luizalabs.com.br' || domain == 'magazineluiza.com.br') {
+    if (domain == 'luizalabs.com' || domain == 'magazineluiza.com.br') {
       this.props.onSignIn(profileData);
     } else {
       return;
