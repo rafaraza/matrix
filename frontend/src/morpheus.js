@@ -39,6 +39,7 @@ window.onload = () => {
             email: basicProfile.getEmail()
           };
           const domain = profileData.email.split('@')[1];
+          console.log(domain);
           if (domain == 'luizalabs.com.br' || domain == 'magazineluiza.com.br') {
             matrixProfile.storeProfileData(profileData);
           } else {
