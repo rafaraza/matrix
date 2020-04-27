@@ -19,8 +19,13 @@ export class LoginButton extends Component {
       imageUrl: profile.getImageUrl(),
       email: profile.getEmail()
     };
-
-    this.props.onSignIn(profileData);
+    const domain = profileData.email.split('@')[1];
+    console.log(domain);
+    if (domain == 'luizalabs.com.br' || domain == 'magazineluiza.com.br') {
+      this.props.onSignIn(profileData);
+    } else {
+      return;
+    }
   }
 
   componentDidMount() {
