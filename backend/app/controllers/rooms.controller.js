@@ -27,8 +27,9 @@ const createRoomFileSync = () => {
 
   const niceNames = [
     "Labs Café",
-    "Parceiro Magalu",
     "Agilidade Organizacional",
+    "Parceiro Magalu",
+    "Listas Magalu",
     "Pair Programming 1",
     "Pair Programming 2",
     "War Room 1",
