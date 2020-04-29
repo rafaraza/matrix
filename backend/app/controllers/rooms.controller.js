@@ -26,7 +26,7 @@ const createRoomFileSync = () => {
   };
 
   const niceNames = [
-    "Labs Café",
+    "Labs Café Tia Luiza",
     "Agilidade Organizacional",
     "Parceiro Magalu",
     "Listas Magalu",
@@ -34,10 +34,7 @@ const createRoomFileSync = () => {
     "Pair Programming 2",
     "War Room 1",
     "War Room 2",
-    "Happy Hour Labs",
-    "Lojas&Comercial",
-    "Logística",
-    "Magalupay",
+    "Happy Hour Labs"
   ];
 
   for (const niceName of niceNames) {
